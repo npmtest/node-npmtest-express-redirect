@@ -1,6 +1,6 @@
 # npmtest-express-redirect
 
-#### basic test coverage for  express-redirect (v1.2.2)  [![npm package](https://img.shields.io/npm/v/npmtest-express-redirect.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-express-redirect) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-express-redirect.svg)](https://travis-ci.org/npmtest/node-npmtest-express-redirect)
+#### basic test coverage for  [express-redirect (v1.2.2)](https://github.com/buschtoens/express-redirect#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-express-redirect.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-express-redirect) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-express-redirect.svg)](https://travis-ci.org/npmtest/node-npmtest-express-redirect)
 
 #### Flexible redirection plugin
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-express-redirect/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-express-redirect/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-express-redirect/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-express-redirect/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-express-redirect/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-express-redirect/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-express-redirect/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-express-redirect/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-express-redirect/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-express-redirect/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-express-redirect/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-express-redirect/build/coverage.html/index.html)
 
@@ -35,17 +35,37 @@
 ```json
 
 {
-    "name": "express-redirect",
-    "description": "Flexible redirection plugin",
-    "version": "1.2.2",
-    "author": "Jan Buschtöns <buschtoens@gmail.com>",
+    "author": {
+        "name": "Jan Buschtöns"
+    },
+    "bugs": {
+        "url": "https://github.com/buschtoens/express-redirect/issues"
+    },
     "contributors": [
         {
             "name": "Jan Buschtöns",
             "url": "https://github.com/buschtoens"
         }
     ],
-    "license": "MIT",
+    "dependencies": {
+        "sanitize-arguments": "~2.0"
+    },
+    "description": "Flexible redirection plugin",
+    "devDependencies": {
+        "express": "~3",
+        "mocha": "~1.7.3",
+        "should": "~1.2.1"
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "6df98e99ee16ca2a1a7d6e4bb663dd6bf87e599c",
+        "tarball": "https://registry.npmjs.org/express-redirect/-/express-redirect-1.2.2.tgz"
+    },
+    "engines": {
+        "node": "*"
+    },
+    "gitHead": "2eaf9689e42fb46abff95e2eef66a9fb209d8058",
+    "homepage": "https://github.com/buschtoens/express-redirect#readme",
     "keywords": [
         "express",
         "express-plugin",
@@ -56,23 +76,28 @@
         "middleware",
         "plugin"
     ],
-    "repository": "git://github.com/buschtoens/express-redirect",
+    "license": "MIT",
     "main": "index",
-    "engines": {
-        "node": "*"
+    "maintainers": [
+        {
+            "name": "buschtoens"
+        },
+        {
+            "name": "silvinci"
+        }
+    ],
+    "name": "express-redirect",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/buschtoens/express-redirect.git"
     },
     "scripts": {
         "prepublish": "npm prune",
         "test": "mocha -R spec -r should"
     },
-    "dependencies": {
-        "sanitize-arguments": "~2.0"
-    },
-    "devDependencies": {
-        "mocha": "~1.7.3",
-        "should": "~1.2.1",
-        "express": "~3"
-    }
+    "version": "1.2.2",
+    "bin": {}
 }
 ```
 
